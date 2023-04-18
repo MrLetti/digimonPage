@@ -19,7 +19,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" href="/">Lista</a>
+                <a class="nav-link active" href="/">Lista</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="/busqueda.html">Buscador</a>
@@ -29,21 +29,22 @@
         </div>
       </nav>
     <div class ="container">
-       <div class="row" id="digimons"></div>
-       <div class="modal fade" id ="modalDetalles" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Detalles del digimon</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-                </div>
-                <div class="modal-body">
-                    <img src="" id="digimonImg" class="img-fluid">
-                    <h1 id="digimonName"></h1>
-                    <p id="digimonLevel"></p>
-                </div>
-            </div>
-        </div>
+       <div class="row" id="digimons">
+       </div>
+        <div class="modal fade" id ="modalDetalles" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog text-center">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Detalles del digimon</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                  </div>
+                  <div class="modal-body">
+                      <img src="" id="digimonImg" class="img-fluid">
+                      <h1 id="digimonName"></h1>
+                      <p id="digimonLevel"></p>
+                  </div>
+              </div>
+          </div>
        </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>

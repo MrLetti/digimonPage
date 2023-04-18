@@ -8,7 +8,7 @@ $(document).ready(function() {
                 let html = "";
                 data.forEach(digimon => {
                     html += `
-                        <div class="col-12 col-md-4 col-lg-3 col-xl-2">
+                        <div class="col-12 col-md-4 col-lg-3 col-xl-2 text-center">
                             <div class="card mt-4">
                                 <div class="card-header">
                                     <h3>${digimon.name}</h3>
@@ -26,7 +26,6 @@ $(document).ready(function() {
                 $(".detalles").on("click", function() {
                     mostrarDetalles($(this).data());
                 });
-
             },
             error: function(error) {
                 console.log(error);
