@@ -15,7 +15,7 @@ $(document).ready(function() {
                                 </div>
                                 <div class="card-body">
                                     <img src="${digimon.img}" class="img-fluid">
-                                    <p>${digimon.level}</p>
+                                    <p>Nivel: ${digimon.level}</p>
                                     <button type="button" class="btn btn-info detalles" data-bs-toggle="modal" data-bs-target="#modalDetalles" data-name="${digimon.name}" data-img="${digimon.img}" data-level="${digimon.level}">Detalles</button>
                                 </div>
                             </div>
@@ -35,6 +35,6 @@ $(document).ready(function() {
         console.log(digimon.img);
         $("#digimonImg").attr("src", digimon.img);
         $("#digimonName").text(digimon.name);
-        $("#digimonLevel").text(digimon.level);    
+        $("#digimonLevel").text(`Nivel: ${digimon.level}`);    
     };
     });

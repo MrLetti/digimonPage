@@ -47,7 +47,7 @@
     </nav>
     <div class="container mt-5">
         <div class="row justify-content-center">
-                <div class="card col-6 d-flex justify-content-center">
+                <div class="card col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 d-flex justify-content-center">
                     <div class="card-header col-12">
                         <img src="./assets/img/digimonNav.png" alt="iconoDigimon" width="100rem" height="50rem">
                         <h5 class="pt-2">Buscador de digimons</h5>
@@ -57,8 +57,19 @@
                           <div class="form-group">
                             <label for="digimonName"><h3>Nombre de digimon</h3></label>
                             <input type="text" class="form-control" id="digimonName" placeholder="Ingrese el nombre del digimon.">
+                            <select class="form-control mt-2 d-none" name="selectNivel" id="selectNivel">
+                              <option value="0">Seleccione un nivel</option>
+                              <option value="In Training">In Training</option>
+                              <option value="Fresh">Fresh</option>
+                              <option value="Rookie">Rookie</option>
+                              <option value="Champion">Champion</option>
+                              <option value="Ultimate">Ultimate</option>
+                              <option value="Mega">Mega</option>
+                              <option value="Armor">Armor</option>
+                            </select>
                           </div>
                           <button type="button" class="btn btn-primary mt-2" id="botonBuscar">Buscar</button>
+                          <input type="checkbox" id="checkNivel"> Buscar por nivel
                       </form>
                     </div>      
                 </div>
@@ -66,6 +77,8 @@
         <div class="row justify-content-center">
             <div class="text-center d-flex justify-content-center align-items-center" id="digimon"></div>
         </div>
+        <div class="row d-none" id="digimons"></div>
+        
     </div>
   </body>
   <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
