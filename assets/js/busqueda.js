@@ -53,7 +53,6 @@ $(document).ready(function() {
                                 <div class="card-body">
                                     <img src="${digimon.img}" class="img-fluid">
                                     <p>${digimon.level}</p>
-                                    <button type="button" class="btn btn-info detalles" data-bs-toggle="modal" data-bs-target="#modalDetalles" data-name="${digimon.name}" data-img="${digimon.img}" data-level="${digimon.level}">Detalles</button>
                                 </div>
                             </div>
                         </div>
