@@ -72,7 +72,6 @@ $(document).ready(function() {
         }
     });
     $("#checkNivel").on("change", function(){
-        console.log($(this).prop("checked"));
         if($(this).prop("checked")) {
             $("#digimonName").addClass("d-none");
             $("#selectNivel").removeClass("d-none");
