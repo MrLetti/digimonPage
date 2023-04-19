@@ -27,12 +27,11 @@ $(document).ready(function() {
                     mostrarDetalles($(this).data());
                 });
             },
-            error: function(error) {
-                console.log(error);
+            error: function() {
+                alert("Error al consumir la API de Digimon");
             }
         });
     const mostrarDetalles = (digimon) => {
-        console.log(digimon.img);
         $("#digimonImg").attr("src", digimon.img);
         $("#digimonName").text(digimon.name);
         $("#digimonLevel").text(`Nivel: ${digimon.level}`);    
